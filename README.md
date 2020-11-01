@@ -75,11 +75,11 @@ The result of running the script is shown below:
 
 ### *Table 1 - Stock data for 2017*
 
-<img src="resources/VBA_Challenge_2017.PNG"></img>
+<img src="Resources/VBA_Challenge_2017.PNG"></img>
 
 ### *Table 2 - Stock data for 2018*
 
-<img src="resources/VBA_Challenge_2018.PNG"></img>
+<img src="Resources/VBA_Challenge_2018.PNG"></img>
 
 Looking at DQ's stocks in 2017, DQ had the highest return out of all of the green energy stocks available. While this is good as one of the client criteria, the other criteria (stock volume) is showing as having the lowest volume. 
 
@@ -90,9 +90,9 @@ Also, though returns were high in 2017, boasting a 199.4% return from the beginn
 
 Looking at Table 1 [(Stock Data for 2017)](#table-1---stock-data-for-2017), we can see at the bottom of the image of a MsgBox showing the run time of the code. This duration refers to the code after we had already refactored our code to run more efficiently. To properly determine if our refactor was successful we need to compare its duration vs. the old code:
 
-<img src="resources/VBA_Challenge_2017_before_after.PNG"></img>
+<img src="Resources/VBA_Challenge_2017_before_after.PNG"></img>
 
-<img src="resources/VBA_Challenge_2018_before_after.png"></img>
+<img src="Resources/VBA_Challenge_2018_before_after.png"></img>
 
 The refactored code runs much faster, and the differences in run times will become even more apparent as the data source gets larger. In the case we want to add code to have it run without userInput and run it for all years, we can have the current block code (that is going through the tickers array), refer to an index variable instead of using a magic number to loop the code. This will exponentially improve on the run times, as the added data will have to cycle through each loop in a more efficient and more flexible way.
 

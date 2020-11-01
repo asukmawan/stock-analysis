@@ -67,7 +67,7 @@ To determine return, the starting and end price were found using the following:
                 endingPrice = Cells(j, 6)
             End If
 
-The code block for `startingPrice` is determining whether the cell above its current cell is the not the same, then we can set the start pricing for that ticker from that row under column 6. Similarily for `endingPrice` we are determining if the current cell and the cell below it are different. This will determine that this is the last row for that particular ticker, and so the end price will be set from that row.
+The code block for `startingPrice` is determining whether the cell above its current cell is the not the same, then we can set the start pricing for that ticker from that row under column 6. Similarly for `endingPrice` we are determining if the current cell and the cell below it are different. This will determine that this is the last row for that particular ticker, and so the end price will be set from that row.
 
 The the current ticker is then output to cells on a separate worksheet and then the code will loop back again on the next ticker. 
 
